@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box; /* Utilizado para normalizar los margenes y los paddings */
+}
+
+html{
+    height: 100%; /* Utilizado para que el html ocupe todo el alto de la pantalla */
+}
+
+body{
+    /*color: gainsboro;*/
+    margin: 0 auto;
+  
+    /*
+    ancho del contenedor(main)
+    Especificamos un máximo de ancho de 1000px. 
+    Es recomendable hacer uso del max-width dado que en monitores especialmente 
+    grandes no queremos que el ancho de la web sea el total del mismo.
+    */
+    max-width: 1000px;
+    
+    /*el contenedor main ocupa el 100% de la altura del viewport */
+    min-height: 100vh;
+
+    /*margin: 0; /* Utilizado para que no nos ponga márgenes automáticos */
+    /*padding: 0; /* Utilizado para que no nos ponga paddings automáticos */
+    /*min-height: 100%; /* Utilizado para que el html ocupe todo el alto de la pantalla */
+}
+

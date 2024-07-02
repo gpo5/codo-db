@@ -1,0 +1,44 @@
+.footer{
+    display: flex;
+    background-color: #fff;
+    box-shadow: none;
+    margin: 5px;
+    padding: 5px 20px;
+    bottom: 0;
+    grid-area: footer; /* Asignar un área al FOOTER */
+    border-top: 2px solid black;
+    text-align: center;    
+}
+
+.redes{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex: 1;
+    /* justify-content: left; */
+    margin: 5px;
+    gap: 30px;
+}
+
+.redes ul {
+    flex-grow: 1; /* todos los ítems tendrán el mismo tamaño*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /* le saca la viñeta */
+    display: flex; /* Para que la lista que está en vertical se muestre horizontal*/
+    align-items: center; /* Alinear los ítems al centro*/
+    justify-content: right; /* centrar el justificado */
+}
+
+.redes ul li a{                /* estilos a los links*/
+    text-decoration: none;  /* Quitarle el subrayedo*/
+    font-size: 14px;
+    display: block;         /* para poder manejarlos un poco mejor*/
+    margin: 10px; 
+    color: black;
+    transition: all 0.3s;
+}
+
+.redes ul li a:hover, header ul li a.active{
+    color: rgb(236, 157, 9);
+    border-bottom: 2px solid rgb(236, 157, 9);
+}

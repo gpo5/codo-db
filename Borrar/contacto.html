@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 5 - Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/edf87542cc.js" crossorigin="anonymous"></script>
+</head>
+<body class="grid-container-form">
+    <header class="header">  
+        <div class="logo">
+            <img class="logo-img" src="img/logo.png" alt="Grupo 5">
+        </div>
+        <div id="header-box2">
+        <h1>Grupo 5</h1>
+        <h2>Paint Store</h2>
+        </div>
+        <div id="header-box3">Caja 3</div>
+        <div id="header-box4">
+            <ul class="box4-list">
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="sucursales.html">Sucursales</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><b>Contacto</b></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article id="form">
+            <form>
+                <h2>Contacto</h2>
+                <div class="input-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Nombre">
+
+                    <label for="tel">Teléfono <span id="obligatorio">*</span></label>
+                    <input type="tel" name="tel" id="tel" placeholder="Teléfono" required>
+
+                    <label for="email">E-Mail <span id="obligatorio2">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                    <div class="radio">
+                        <input type="radio" name="opcion" value="1">Consulta
+                        <input type="radio" name="opcion" value="1">Compra
+                    </div>
+
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                    <input class="btn-enviar" type="submit" value="Enviar" >
+                </div>
+            </form>
+        </article>
+        <article class="contacto-caja2">
+            <div class="headset">
+                <img src="img/headset2.png" alt="Contacto" class="headset-img">
+            </div>
+            <div class="headset-text">
+                <p>En <b>Grupo 5</b>, estamos comprometidos a proporcionarte productos de alta calidad y un servicio excepcional. Nos encantaría escuchar de ti y ayudarte con cualquier pregunta, consulta o solicitud que puedas tener. No dudes en ponerte en contacto con nosotros a través de este formulario.</p>
+                <p>Nuestro equipo de expertos estará encantado de asistirte y ofrecerte asesoramiento personalizado para tus proyectos de pintura. Ya sea que necesites recomendaciones de productos, información sobre disponibilidad o simplemente quieras compartir tus ideas, ¡estamos aquí para ayudarte!</p>
+                <p>¡Esperamos tener noticias tuyas pronto y ser parte de tus proyectos de pintura!</p>
+            </div>
+
+        </article>
+    </main>
+    <footer class="footer">
+        <div>
+            &copy; Grupo 5 - Paint Store
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

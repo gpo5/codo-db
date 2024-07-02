@@ -1,0 +1,38 @@
+.grid-container-form > * {
+    box-shadow: -1px 1px 5px 1px rgba(51,51,51,0.75);
+    border-radius: 0;
+    padding: 0;
+}
+
+.grid-container-form {
+    display: grid;
+    gap: 0px;
+    column-gap: 10px;
+    /*grid-template-areas:    /* definir las áreas
+    "header"
+    "nav"
+    "main"
+    "aside"  
+    "footer";*/
+    grid-template:    /* definir las áreas con su altura*/
+    "header"    140px
+    "nav"       50px
+    "main"      auto
+    "footer"    50px;
+}
+
+@media (min-width: 900px) {
+    .grid-container-form {
+        /*grid-template-columns: auto 200px; /*ancho de la 1era y 2da columna*/
+        /* grid-template-areas: */  
+        grid-template: 
+        /*  ".     header"     100px   el punto hace que la 1er caja esté vacía */
+        "header     header"     140px   /* declaramos dos columas y 100px de alto */
+        "nav        nav"        50px    /* declaramos dos columas y 50px de alto */
+        "main       main"       auto    /* declaramos 1 col para main, otra para aside y el alto automático */
+        "footer     footer"     50px /  /* declaramos dos clumas y 50px de alto */
+        auto 200px;                     /* podemos declar el ancho de las columnas */
+        /*"footer     footer"     50px /  
+        auto 200px; */                     /* podemos declar el ancho de las columnas */
+    }
+}

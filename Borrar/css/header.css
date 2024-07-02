@@ -1,0 +1,130 @@
+.header{
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+    border-radius: 5px;
+    display: flex;
+    flex: 1;
+    /* justify-content: left; */
+    margin: 5px;
+    gap: 30px;
+}
+
+.logo{
+    padding: 10px;
+    flex-basis: 30%;
+}
+
+.logo-img{
+    height: 110px;
+}
+
+#header-box2{
+    /* background-color: #ccc; */
+    flex-basis: 40%;
+    margin: 5px;
+}
+
+#header-box2 h1{
+    font-size: 36px;
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+}
+
+#header-box2 h2{
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#header-box3{
+    background-color: aquamarine;
+    visibility: hidden;
+    flex-basis: 5%;
+}
+
+#header-box4{
+    background-color: rgb(138, 255, 127);
+    visibility: hidden;
+    width: 1%;
+}
+
+.box4-list {
+    display: flex; /* Aplica Flexbox para los ítems de la lista */
+    padding: 0; /* Quita el espacio de relleno predeterminado de la lista */
+    list-style-type: none; /* Quita los puntos/bolitas de la lista */
+}
+
+.box4-list li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último ítem */
+}
+  
+.box4-list li {
+    margin-right: 5px; /* Margen derecho entre los ítems */
+    position: relative; /* Añade posición relativa para el ítem */
+}
+
+.box4-list li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último ítem */
+}
+  
+.box4-list a {
+    text-decoration: none; /* Quita la decoración de subrayado de los enlaces */
+    color: #fff; /* Color del texto de los ítems */
+}
+
+/* Estilo del separador | */
+.box4-list li:not(:last-child)::after {
+    content: "|"; /* Agrega el separador | después de cada ítem, excepto el último */
+    margin-left: 10px; /* Espacio a la izquierda del separador */
+    color: #fff; /* Color del separador */
+    position: absolute; /* Añade posición absoluta para el separador */
+    right: -5px; /* Ajusta la posición del separador a la derecha */
+    top: 50%; /* Ajusta la posición vertical del separador */
+    transform: translateY(-50%); /* Centra verticalmente el separador */
+  }
+
+  header ul {
+    flex-grow: 1; /* todos los ítems tendrán el mismo tamaño*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /* le saca la viñeta */
+    display: flex; /* Para que la lista que está en vertical se muestre horizontal*/
+    align-items: center; /* Alinear los ítems al centro*/
+    justify-content: right; /* centrar el justificado */
+
+}
+
+header ul li a{                /* estilos a los links*/
+    text-decoration: none;  /* Quitarle el subrayedo*/
+    font-size: 10px;
+    display: block;         /* para poder manejarlos un poco mejor*/
+    margin: 5px; 
+    color: white;
+    transition: all 0.3s;
+}
+
+header ul li a:hover, header ul li a.active{
+    color: rgb(236, 157, 9);
+    border-bottom: 2px solid rgb(236, 157, 9);
+}
+
+
+@media (min-width: 900px) {
+    #header-box4{
+        visibility: visible; 
+        background-image: url("../img/top.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-right: 15px;
+        width: 100%;
+        height: 90px;
+        border-radius: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 12px;
+    }
+}

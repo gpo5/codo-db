@@ -1,0 +1,90 @@
+.aside{
+    background-color:  rgb(236, 157, 9);
+    grid-area: aside; /* Asignar un área al NAV */
+    display: flex;
+    flex-flow: row wrap; /* Utilizado para que las cajas bajen de fila */
+    justify-content: center; /* Alinear al centro */
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+.aside ul {
+    flex-grow: 1; /* todos los ítems tendrán el mismo tamaño*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /* le saca la viñeta */
+    display: flex; /* Para que la lista que está en vertical se muestre horizontal*/
+    align-items: center; /* Alinear los ítems al centro*/
+    justify-content: center; /* centrar el justificado */
+
+}
+
+.aside ul li a{
+    display: block; /* para que ocupe todo y se pueda hacer clic en cualquier parte*/
+    padding: 10px;
+    padding-bottom: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+/*     color: black; */
+    color: rgb(0, 0, 71);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.aside ul li a:hover, aside ul li a.active{
+    color: #05a081;
+    /* border-bottom: 2px solid #05a081; */
+    border-bottom: 1px solid #05a081;
+}
+
+@media (min-width: 500px) {
+    .aside ul li a{
+        padding: 15px;
+        padding-bottom: 15px;
+    }
+    .aside ul li a:hover, aside ul li a.active{
+        color: #05a081;
+        /* border-bottom: 2px solid #05a081; */
+        border-left: 1px solid #05a081;
+        border-bottom: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .aside{
+        /* visibility: hidden; */
+        display: flex;
+        padding: 0 30px;
+        flex-flow: column wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .aside ul {
+        flex-grow: 1; /* todos los ítems tendrán el mismo tamaño*/
+        margin: 0;
+        padding: 0;
+        list-style: none; /* le saca la viñeta */
+        display: block; /* Para que la lista que está en horizontal se muestre vertical*/
+        align-items: center; /* Alinear los ítems al centro*/
+        justify-content: center; /* centrar el justificado */
+    
+    }
+    .aside ul li{
+        margin: 5px;
+        font-size: 15px;
+        width: 100%; /*utilizado para que al hacer clic al 100% de la caja*/
+        justify-content: center; /* centrar el justificado */
+        list-style: none;
+    }
+    
+    @media (min-width: 1200px) {
+        body {
+        margin: 0 auto;
+        max-width: 1400px;
+        min-height: 100vh;
+        }
+    }
+
+}

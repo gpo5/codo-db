@@ -1,0 +1,103 @@
+.productos {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.producto {
+    margin: 10px;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.producto:hover{
+	/* rota 10 grados sentido horario */
+	transform:rotate(1deg);
+	-webkit-transform:rotate(1deg);
+	-ms-transform:rotate(1deg);
+	/* 
+		Para el color rgba de la sombra, usa .8( 80% de opacidad).
+		box-shadow(sombra de la caja) usa 2px de sombra a la derecha,
+		2px de sombra hacia abajo y 6px de radio de sombra(o sea, sombra redondeada) 
+	*/
+
+	box-shadow: 2px 2px 6px rgba(0,0,0,.8);
+	-webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.8);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.prod-img {
+    /* border: 1px solid black; */
+    padding: 10px;
+    text-align: center;
+}
+
+.lata-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+    /* border: 1px solid black; */
+}
+
+.prod-contenido {
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: grey;
+}
+.prod-contenido span {
+    margin: 10px;
+}
+
+.prod-contenido i {
+    color: green;
+}
+
+.prod-lista {
+    list-style-type: none;
+}
+
+.prod-comprar {
+    background-color: rgb(236, 157, 9);
+    padding: 10px;
+    
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: 1px solid transparent; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    text-decoration: none; /* Quita la decoración de subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+  }
+
+  .btn2:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor sobre el botón */
+  }
+  
+  .btn2:focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+
+
+/* @media (min-width: 500px) {
+    .sucursales-caja2{
+        width: 100%;
+        max-width: 100%;
+    }
+    #sucursales{
+        width: 400px;
+        min-width: 400px;
+        margin-bottom: 20px;
+        border-right: 1px solid gainsboro;
+    }    
+} */

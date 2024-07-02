@@ -1,0 +1,68 @@
+nav {
+    background-color:  rgb(236, 157, 9);
+    /* background-color: aqua; */
+    grid-area: nav; /* Asignar un área al NAV */
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.nav-list {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    display: flex; /* Aplica Flexbox para los ítems de la lista */
+    padding: 0; /* Quita el espacio de relleno de la lista */
+    list-style-type: none; /* Quita los puntos/bolitas de la lista */
+    align-items: center; /* Alinear los ítems al centro*/
+    justify-content: center; /* Alinear al centro */
+    /*flex-flow: row wrap;  Utilizado para que las cajas bajen de fila */
+}
+
+.nav-list li {
+    margin-right: 10px; /* Margen derecho entre los ítems */
+    position: relative; /* Añade posición relativa para el ítem */
+}
+
+/* Estilo del separador | */
+.nav-list li:not(:last-child)::after {
+    content: "|"; /* Agrega el separador | después de cada ítem, excepto el último */
+    margin-left: 10px; /* Espacio a la izquierda del separador */
+    color: black; /* Color del separador */
+    position: absolute; /* Añade posición absoluta para el separador */
+    right: -6px; /* Ajusta la posición del separador a la derecha */
+    top: 50%; /* Ajusta la posición vertical del separador */
+    transform: translateY(-50%); /* Centra verticalmente el separador */
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último ítem */
+}
+
+.nav-list a {
+    text-decoration: none; /* Quita la decoración de subrayado de los enlaces */
+    color: ghostwhite;
+}
+
+nav ul {
+    flex-grow: 1; /* todos los ítems tendrán el mismo tamaño*/
+    margin: 0;
+    padding: 0;
+    list-style: none; /* le saca la viñeta */
+    display: flex; /* Para que la lista que está en vertical se muestre horizontal*/
+    align-items: center; /* Alinear los ítems al centro*/
+    justify-content: center; /* centrar el justificado */
+}
+
+nav ul li a{                /* estilos a los links*/
+    text-decoration: none;  /* Quitarle el subrayedo*/
+    font-size: 15px;
+    display: block;         /* para poder manejarlos un poco mejor*/
+    margin: 5px; 
+    color: black;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active{
+    color: #05a081;
+    border-bottom: 2px solid #05a081;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo 5 - Paint Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/edf87542cc.js" crossorigin="anonymous"></script>
+</head>
+<body class="grid-container">
+    <header class="header">  
+        <div class="logo">
+            <img class="logo-img" src="{{ url_for('static', filename='img/logo.png') }}" alt="Grupo 5">
+        </div>
+        <div id="header-box2">
+        <h1>Grupo 5</h1>
+        <h2>Paint Store</h2>
+        </div>
+        <div id="header-box3">Caja 3</div>
+        <div id="header-box4">
+            <ul class="box4-list">
+                <li><a href="{{ url_for('sucursales') }}">Sucursales</a></li>
+                <li><a href="{{ url_for('productos') }}">Productos</a></li>
+                <li><a href="{{ url_for('clientes') }}">Clientes</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><b>HOME</b></li>
+            <li><a href="{{ url_for('sucursales') }}">Sucursales</a></li>
+            <li><a href="{{ url_for('productos') }}">Productos</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+        </ul>
+    </nav>
+    <aside class="aside">
+        <ul>
+            <li><a href="#">Productos</a></li>
+            <!--
+                <li><a href="#">Quiénes somos</a></li>
+            -->
+            <li><a href="{{ url_for('productos') }}">Látex</a></li>
+            <li><a href="{{ url_for('productos') }}">Sintético</a></li>
+            <li><a href="{{ url_for('productos') }}">Enduido</a></li>
+            <li><a href="{{ url_for('productos') }}">Mate</a></li>
+            <li><a href="{{ url_for('productos') }}">Esmaltes</a></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <article id="caja1">
+            <h1>Grupo 5</h1>
+            <h2>Paint Store</h2>
+            <!--<img src="img/madera1.png" width="450px" height="500px" alt="">
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis asperiores vitae tenetur dolores corporis dolore quidem! A quis vel laboriosam quod nulla in. Nesciunt quasi officia beatae reprehenderit, illum totam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis asperiores vitae tenetur dolores corporis dolore quidem! A quis vel laboriosam quod nulla in. Nesciunt quasi officia beatae reprehenderit, illum totam!</p>
+            -->
+        </article>
+        <article class="caja2">
+            <div id="caja2-texto">
+                <h1>Una empresa familiar</h1>
+                <p>Somos una tienda de pinturas con más de 40 años de experiencia, ubicada en el vibrante barrio de Palermo. Desde nuestros inicios, nos hemos dedicado a ofrecer a nuestros clientes productos de alta calidad y un servicio excepcional.</p>
+                <p>En <b>Grupo 5</b>, nos comprometemos a proporcionarte las mejores soluciones en pinturas para tus proyectos, ya sean grandes o pequeños. Nos esforzamos por ser tu aliado confiable en el mundo de la decoración y renovación del hogar.</p>
+                <p>Contamos con una amplia gama de pinturas de marcas reconocidas, colores vibrantes y acabados duraderos.</p>
+            </div>
+            <div id="caja2-div"><a href="{{ url_for('productos') }}" class="btn2">Sintético</a></div>
+            <!-- <div id="caja2-div"><p style="text-align: center;"><img src="img/latas2.png" width="280px" height="280px" alt=""></p></div> -->
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem natus modi consequatur veniam aliquam iste, corporis rem. Sed, rem quae.</p> -->
+        </article>
+    </main>
+    <footer class="footer">
+        <div>
+            &copy; Grupo 5 - Paint Store
+        </div>
+        <div class="redes">
+            <ul class="redes-list">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+.main{
+    background-color: rgb(255, 255, 255);
+    grid-area: main; /* Asignar un área al MAIN */
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    gap: 10px;
+    column-gap: 0px;
+}
+
+#caja1 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/madera1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+    height: 80%;
+    width: 96%;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /*     max-width: 500px;
+    min-width: 500px; */
+    /* padding: 40px 50px; */
+    /* font-size: 24px; */
+    /* text-align: center; */
+    /* text-justify: center; */
+    /* color: #249170; */
+}
+
+#caja1 h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 10px;
+    font-size: 90px;
+    color: #43a8eb;
+    margin: 0;
+    padding: 0;
+}
+
+#caja1 h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: 40px;
+    color: #d351c2;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#caja1 h1, #caja1 h2 {
+    text-shadow: 
+      -0.5px -0.5px 0.5px #000,  
+      0.5px -0.5px 0.5px #000,  
+      -0.5px 0.5px 0.5px #000,  
+      0.5px 0.5px 0.5px #000; /* Sombra del texto */
+    -webkit-text-stroke: 0.5px black; /* Borde alrededor del texto (para navegadores WebKit como Chrome y Safari) */
+  }
+  
+
+.caja2{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px;
+    width: 97%;
+}
+
+#caja2-texto h1 {
+    text-align: center;
+}
+
+#caja2-texto{
+    background-color: antiquewhite;
+    margin: 5px;
+}
+
+#caja2-div{
+    position: relative;
+    /* background-color: #ccc; */
+    background-image: url("../img/latas2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 450px;
+    max-width: 100%;
+    min-height: 280px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: 12px; */
+    /* color: blanchedalmond; */
+    /* margin: 5px; */
+    /* text-align: left; */
+}
+
+#caja2-div > a{                /* estilos a los links*/
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;  /* Quitarle el subrayedo*/
+    font-size: 14px;
+    display: block;         /* para poder manejarlos un poco mejor*/
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.btn2 {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: 1px solid transparent; /* Borde del botón */
+    border-radius: 4px; /* Esquinas redondeadas */
+    text-decoration: none; /* Quita la decoración de subrayado del enlace */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave de color de fondo */
+  }
+
+  .btn2:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor sobre el botón */
+  }
+  
+  .btn2:focus {
+    outline: none; /* Quita el contorno al enfocar el botón */
+  }
+
+/* #caja2 p{
+    background-color: blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+ @media (min-width: 500px) {
+    .main{
+        flex-direction: row;
+    }
+    #caja1{
+        height: 96%;
+        min-width: 450px;
+        max-width: 450px;
+    }
+    #caja2-div{
+        min-width: 200px;
+        max-width: 96%;
+        min-height: 280px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: blanchedalmond;
+    }
+@media (min-width: 900px) {
+    #caja2-div{
+        background-image: url("../img/latas2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 450px;
+        max-width: 100%;
+        min-height: 400px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: blanchedalmond;
+        border-radius: 10px;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+    }
+    @media (min-width: 1200px) {
+        #caja2-div{
+            background-image: url("../img/latas.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-width: 200px;
+            max-width: 100%;
+            min-height: 280px;
+            border-radius: 10px;
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+        #caja2-div > a{                /* estilos a los links*/
+            position: absolute;
+            bottom: 0;
+            text-decoration: none;  /* Quitarle el subrayedo*/
+            font-size: 14px;
+            display: block;         /* para poder manejarlos un poco mejor*/
+            margin-left: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        #caja2-texto h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+}
